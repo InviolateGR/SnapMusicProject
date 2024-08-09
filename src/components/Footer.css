@@ -1,0 +1,68 @@
+:root{
+  /* Primary Colors */
+  --primary-color: #1db954;
+  --secondary-color: #48b66e;
+  
+  /* white varients */
+  --white-1: #e9e9e9;
+  --white-2: #b6b6b6;
+  --white-3: #8b8b8b;
+
+  /* black varients */
+  --black-1: #0d0d0d;
+  --black-2: #171717;
+  --black-3: #2c2c2c;
+  --black-4: #474747;
+}
+.footer {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+  background-color: rgba(29, 185, 84, 0.4);
+  color: var(--white-1);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  align-items: center;
+}
+
+.song-details{
+  display: flex;
+}
+.song-content{ 
+  position: relative;
+}
+.song-thumbnail-container{
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(170, 170, 170, 0.356);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.player {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.player-controls{
+  display: flex;
+  justify-content: space-around;
+  gap: 18px;
+}
+
+.progress-control{
+  display: flex;
+  justify-content: space-between;
+}
+

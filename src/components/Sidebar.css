@@ -1,0 +1,64 @@
+:root{
+  /* Primary Colors */
+  --primary-color: #1db954;
+  --secondary-color: #48b66e;
+  
+  /* white varients */
+  --white-1: #e9e9e9;
+  --white-2: #b6b6b6;
+  --white-3: #8b8b8b;
+
+  /* black varients */
+  --black-1: #0d0d0d;
+  --black-2: #171717;
+  --black-3: #2c2c2c;
+  --black-4: #474747;
+}
+
+.sidebar {
+  width: fit-content;
+  height: 80vh;
+  overflow-y: scroll; /* Ensure vertical scroll behavior */
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-container{
+  height: auto;
+  width: auto;
+  padding: 10px;
+  background-color: var(--black-2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.playlist-icon-container{
+  width: 60px;
+  height: 60px;
+  background-color: var(--black-2);
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playlist-icon-container svg{
+  width: 50%;
+  height: auto;
+}

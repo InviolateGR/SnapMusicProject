@@ -1,0 +1,52 @@
+.install-container {
+    background-image: url('/src/assets/background-2.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .install-container .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .main-content h1 {
+    font-size: 2.3em;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9); /* Text shadow for contrast */
+  }
+  
+  .install-container .download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+  }
+  
+  .install-container .btn {
+    background-color: transparent;
+    box-shadow: 8px 0px 10px rgb(29, 29, 29);
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .install-container .btn img {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+  }
+  

@@ -1,0 +1,261 @@
+
+  .exp-container {
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    flex-direction: column;
+    gap: 180px;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+    padding: 200px 0px;
+  }
+  .exp-container .container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .exp-container h1 {
+    animation: slideIn 0.6s ease-out forwards;
+  }
+  
+  .exp-container p {
+    line-height: 1.6;
+    animation: slideIn 0.8s ease-out forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .exp-container .payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0px;
+    animation: fadeInIcons 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInIcons {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .content-wrapper .payment-icon {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    border-radius: 6px;
+    color: rgb(27, 27, 27);
+    align-content: center;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+  }
+  
+  .content-wrapper .payment-icon img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .content-wrapper .payment-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+   
+  .content-wrapper .benefits-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .benefits-container .benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .benefits .benefit {
+    text-align: center;
+    animation: fadeInBenefit 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInBenefit {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .exp-container .plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .exp-container .plan-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    padding: 30px 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInPlan 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInPlan {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .individual:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(168, 223, 255, 0.54);
+  }
+  .student:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 168, 168, 0.54);
+  }
+  .duo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(168, 168, 255, 0.54);
+  }
+  .mini:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 168, 0.54);
+  } 
+  .family:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(168, 255, 168, 0.54);
+  } 
+  .exp-container .plan-header {
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: rgb(33, 33, 33);
+    font-weight: 700;
+  }
+  .individual .plan-header{
+    background-color: rgb(168, 223, 255);
+  }
+  .individual .plan-body button{
+    background-color: rgb(168, 223, 255);
+  }
+  .student .plan-header{
+    background-color: rgb(255, 168, 168);
+  }
+  .student .plan-body button{
+    background-color: rgb(255, 168, 168);
+  }
+  .duo .plan-header{
+    background-color: rgb(168, 168, 255);
+  }
+  .duo .plan-body button{
+    background-color: rgb(168, 168, 255);
+  }
+  .mini .plan-header{
+    background-color: rgb(255, 255, 168);
+  }
+  .mini .plan-body button{
+    background-color: rgb(255, 255, 168);
+  }
+  .family .plan-header{
+    background-color: rgb(168, 255, 168);
+  }
+  .family .plan-body button{
+    background-color: rgb(168, 255, 168);
+  }
+
+  .exp-container .plan-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .exp-container .plan-body h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .exp-container .plan-body p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .exp-container .plan-body ul {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .exp-container .plan-body li {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  
+  .exp-container .plan-body button {
+    color: rgb(33, 33, 33);
+    border: none;
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .exp-container .experience-container {
+    margin-top: 50px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .exp-container .experience-container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .exp-container .experience-container p {
+    font-size: 1.2em;
+  }
+  
